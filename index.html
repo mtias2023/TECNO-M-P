@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TECNO M&P</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body class="bg-white text-black font-sans">
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+  
+  <!-- Banners -->
+  <section class="swiper slider">
+    <div class="swiper-wrapper">
+      <!-- Banner 1 -->
+      <div class="swiper-slide relative w-full max-w-full">
+        <img src="img/banner01.png" class="w-full h-auto object-cover rounded-lg shadow" alt="Banner 1">
+        <div class="absolute inset-0 flex justify-center items-end pb-80">
+          <div class="flex flex-row gap-4">
+            <a href="productos.html" class="bg-[#0078ca] text-white px-6 py-3 rounded-lg shadow hover:bg-blue-800 transition">
+              Ver Productos
+            </a>
+            <a href=" https://wa.me/5491166008018?text=Hola,%20quiero%20más%20información" target="_blank" class="bg-green-600 text-white px-6 py-3 rounded-lg shadow hover:bg-green-700 transition flex items-center gap-2">
+              <i class="fab fa-whatsapp text-xl"></i> Contactar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Banners adicionales -->
+      <div class="swiper-slide relative w-full max-w-full">
+        <img src="img/banner3.png" class="w-full h-auto object-cover rounded-lg shadow" alt="Banner 2">
+      </div>
+
+      <div class="swiper-slide relative w-full max-w-full">
+        <img src="img/Bnner-tecno2.png" class="w-full h-auto object-cover rounded-lg shadow" alt="Banner 3">
+      </div>
+    </div>
+
+    <!-- Navegación -->
+    <div class="swiper-button-next text-white"></div>
+    <div class="swiper-button-prev text-white"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- Productos Destacados -->
+  <section class="container mx-auto py-24 px-8">
+    <h1 class="text-3xl font-bold text-center mb-14">Productos Destacados</h1>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+      <!-- Producto 1 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+        <img src="img/xiaomi-14c.jpg" alt="Producto 1" class="w-full h-76 object-cover ">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Xiaomi Redmi 14c, 128gb 4gb Ram</h3>
+          <p class="text-gray-700">Incluye cargado, cable USB, funda transparente (accesorios original de fabrica).</p>
+          <p class="text-lg font-bold text-[#0078ca]">$225.000 ARG</p>
+          <div class="mt-4 flex flex-row gap-2">
+            <a href="productos.html" class="bg-[#0078ca] text-white px-6 py-2 rounded hover:bg-blue-700 transition">Ver más</a>
+            <a href=" https://wa.me/5491166008018?text=Hola,%20quiero%20más%20información%20sobre%20el%20xiaomi%2014c" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded shadow hover:bg-green-700 transition flex items-center justify-center gap-2">
+              <i class="fab fa-whatsapp text-xl"></i> Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+        <img src="img/play5.jpg" alt="Producto 2" class="w-full h-76 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Playstation 5 Slim Digital Edition 1tb</h3>
+          <p class="text-gray-700">Incluye: un joystick, cables USB y HDMI, así como la consola en su edición digital.</p>
+          <p class="text-lg font-bold text-[#0078ca]">$1.000.000 ARG</p>
+          <div class="mt-4 flex flex-row gap-2">
+            <a href="productos.html" class="bg-[#0078ca] text-white px-6 py-2 rounded hover:bg-blue-700 transition">Ver más</a>
+            <a href="https://wa.me/5491166008018?text=Hola,%20quiero%20más%20información%20sobre%20el%20Playstation%205%20Slim%20Digital%20Edition%201tb" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded shadow hover:bg-green-700 transition flex items-center justify-center gap-2">
+              <i class="fab fa-whatsapp text-xl"></i> Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="bg-white shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+        <img src="img/proyector-digital.jpg" alt="Producto 3" class="w-full h-76 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Proyector HY-300 A (PRO) ULTRA HD</h3>
+          <p class="text-gray-700">Incluye una app preinstalada para que disfrutes de tv en vivo, peliculas en estreno, series, pack de futbol y mas.</p>
+          <p class="text-lg font-bold text-[#0078ca]">$80.000 ARG</p>
+          <div class="mt-4 flex flex-row gap-2">
+            <a href="productos.html" class="bg-[#0078ca] text-white px-6 py-2 rounded hover:bg-blue-700 transition">Ver más</a>
+            <a href="https://wa.me/5491166008018?text=Hola,%20quiero%20más%20información%20sobre%20el%20Proyector%20HY-300%20A%20(PRO)%20ULTRA%20HD%2B" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded shadow hover:bg-green-700 transition flex items-center justify-center gap-2">
+              <i class="fab fa-whatsapp text-xl"></i> Consultar
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+ <!-- Ofertas -->
+<section class="container mx-auto py-12 px-8">
+  <h2 class="text-3xl font-bold text-center mb-14">Ofertas Especiales</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+
+    <!-- Oferta 1 -->
+    <div class="relative bg-gray-100 shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+      <span class="absolute top-0 left-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-br-lg z-10">¡OFERTA!</span>
+      <img src="img/tv-box.jpg" alt="Oferta 1" class="w-full h-76 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold">Adaptador Smart Tvbox MXQPRO 4k 5G</h3>
+        <p class="text-gray-700">Incluye: 128GB, 8GB de RAM, Android Pro, Bluetooth, Wi-Fi y cable HDMI, ofrece instalación fácil y rendimiento ideal para streaming, juegos y más.</p>
+        <p class="text-sm text-gray-500 line-through">$60s.000 ARG</p>
+        <p class="text-lg font-bold text-[#0078ca]">$45.000 ARG</p>
+        <div class="mt-4 flex flex-row gap-2">
+          <a href="productos.html" class="bg-[#0078ca] text-white px-6 py-2 rounded hover:bg-blue-700 transition">Ver más</a>
+          <a href="https://wa.me/5491166008018?text=Hola,%20quiero%20más%20información%20sobre%20el%20Adaptador%20Smart%20Tvbox%20MXQPRO%204k%205G" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded shadow hover:bg-green-700 transition flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp text-xl"></i> Consultar
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Oferta 2 -->
+    <div class="relative bg-gray-100 shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+      <span class="absolute top-0 left-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-br-lg z-10">¡OFERTA!</span>
+      <img src="img/audifonos-AirPods-Max.jpg" alt="Oferta 2" class="w-full h-76 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold">Auriculares Pro 2da Generación Para iPhone</h3>
+        <p class="text-gray-700">Auriculares Bluetooth in-ear compatibles con AirPods Pro 2da generación, con sonido envolvente, micrófono, luz LED y compatibilidad con iOS/Android. Cómodos y modernos.</p>
+        <p class="text-sm text-gray-500 line-through">$44.000 ARG</p>
+        <p class="text-lg font-bold text-[#0078ca]">$35.000 ARG</p>
+        <div class="mt-4 flex flex-row gap-2">
+          <a href="productos.html" class="bg-[#0078ca] text-white px-6 py-2 rounded hover:bg-blue-700 transition">Ver más</a>
+          <a href="https://wa.me/5491166008018?text=Hola,%20quiero%20más%20información%20sobre%20los%20Auriculares%20Pro%202da%20Generación%20Para%20iPhone" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded shadow hover:bg-green-700 transition flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp text-xl"></i> Consultar
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Oferta 3 -->
+    <div class="relative bg-gray-100 shadow-lg rounded-lg overflow-hidden transition-transform transform hover:scale-105">
+      <span class="absolute top-0 left-0 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-br-lg z-10">¡OFERTA!</span>
+      <img src="img/cargador-iphone.jpg" alt="Oferta 3" class="w-full h-76 object-cover">
+      <div class="p-4">
+        <h3 class="text-xl font-semibold">Combo Cargador Rapido Completo Para iPhone</h3>
+        <p class="text-gray-700">Combo Cargador Rápido 20W para iPhone, incluye cable y garantiza carga eficiente y rápida, reduciendo el tiempo de espera. Compatible con modelos iPhone 8 a 14.</p>
+        <p class="text-sm text-gray-500 line-through">$22.000 ARG</p>
+        <p class="text-lg font-bold text-[#0078ca]">$15.000 ARG</p>
+        <div class="mt-4 flex flex-row gap-2">
+          <a href="productos.html" class="bg-[#0078ca] text-white px-6 py-2 rounded hover:bg-blue-700 transition">Ver más</a>
+          <a href="https://wa.me/5491166008018?text=Hola,%20quiero%20más%20información%20sobre%20el%20Combo%20Cargador%20Rápido%20Completo%20Para%20iPhone" target="_blank" class="bg-green-600 text-white px-6 py-2 rounded shadow hover:bg-green-700 transition flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp text-xl"></i> Consultar
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>
