@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resultados de búsqueda - TECNO M&P</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- Contenido principal -->
+  <main class="container mx-auto p-6">
+    <h2 class="text-2xl font-bold text-[#0078ca] mb-4">Resultados de búsqueda</h2>
+    <p id="resultados" class="text-gray-600 mb-6">Buscando...</p>
+
+    <div id="productos" class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Aquí se mostrarán los productos -->
+    </div>
+  </main>
+
+  <script>
+    // Obtener parámetro 'q' de la URL
+    const params = new URLSearchParams(window.location.search);
+    const query = params.get('q');
+
+    document.getElementById('resultados').innerText = `Resultados para: "${query}"`;
+
+    // Simulación de productos (deberías conectar con tus productos reales si tenés un backend o JSON)
+    const productos = [
+      { nombre: 'iPhone 14 Pro', categoria: 'celulares' },
+      { nombre: 'Samsung Galaxy S22', categoria: 'celulares' },
+      { nombre: 'Notebook Lenovo', categoria: 'notebooks' },
+      { nombre: 'Heladera Whirlpool', categoria: 'electrodomésticos' },
+      { nombre: 'Auriculares Bluetooth', categoria: 'accesorios' }
+    ];
+
+    // Filtrar productos
+    const filtrados = productos.filter(p => p.nombre.toLowerCase().includes(query.toLowerCase()));
+
+    const contenedor = document.getElementById('productos');
+    if (filtrados.length === 0) {
+      contenedor.innerHTML = `<p class="text-red-500 col-span-full">No se encontraron productos.</p>`;
+    } else {
+      filtrados.forEach(producto => {
+        const card = `
+          <div class="bg-white p-4 rounded shadow hover:shadow-lg transition">
+            <h3 class="text-xl font-semibold text-[#0078ca]">${producto.nombre}</h3>
+            <p class="text-sm text-gray-500">${producto.categoria}</p>
+          </div>
+        `;
+        contenedor.innerHTML += card;
+      });
+    }
+  </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+ <!-- Footer -->
+ <div id="footer"></div>
+ <script>
+   fetch("footer.html")
+     .then(res => res.text())
+     .then(html => {
+       document.getElementById("footer").innerHTML = html;
+     });
+ </script>
+ 
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Categorías - TECNO M&P</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- Main Section -->
+
+<main class="container mx-auto px-4 py-16">
+  <h1 class="text-3xl font-bold text-center mb-14">Categorías Disponibles</h1>
+
+  <div class="grid gap-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+
+    <!-- Celulares -->
+    <div class="bg-white rounded-3xl shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300 p-4">
+      <a href="productos.html#celulares">
+        <img src="img/cateegorias-celulares.jpg" alt="Celulares" class="w-full h-68 object-cover rounded-xl mb-4">
+        <h2 class="text-xl font-semibold text-[#0078ca] text-center">Celulares</h2>
+        <p class="text-gray-600 mt-2 text-sm text-center">Los mejores dispositivos para conectarte con el mundo.</p>
+      </a>
+      <div class="mt-4 space-y-2 text-sm">
+        <a href="productos.html#productos-celulares-samsung">
+          <button class="w-full bg-[#e6f0fa] text-[#0078ca] py-2 rounded-lg hover:bg-[#d1e8fb] transition">Samsung</button>
+        </a>
+        <a href="productos.html#productos-celulares-xiaomi">
+          <button class="w-full bg-[#e6f0fa] text-[#0078ca] py-2 rounded-lg hover:bg-[#d1e8fb] transition">Xiaomi</button>
+        </a>
+        <a href="productos.html#productos-celulares-motorola">
+          <button class="w-full bg-[#e6f0fa] text-[#0078ca] py-2 rounded-lg hover:bg-[#d1e8fb] transition">Motorola</button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Tecnología -->
+    <a href="productos.html#tecnologia" class="bg-white rounded-3xl shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300 p-4 flex flex-col">
+      <img src="img/categoria-teecnologia.jpg" alt="Tecnología" class="w-full h-68 object-cover rounded-xl mb-4">
+      <div class="flex-grow flex flex-col justify-center text-center">
+        <h2 class="text-xl font-semibold text-[#0078ca]">Tecnología</h2>
+        <p class="text-gray-600 mt-2 text-sm">Últimas novedades en gadgets y dispositivos electrónicos.</p>
+      </div>
+    </a>
+
+    <!-- Electrodomésticos -->
+    <a href="productos.html#electrodomesticos" class="bg-white rounded-3xl shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300 p-4 flex flex-col">
+      <img src="img/categorias-electro.jpg" alt="Electrodomésticos" class="w-full h-68 object-cover rounded-xl mb-4">
+      <div class="flex-grow flex flex-col justify-center text-center">
+        <h2 class="text-xl font-semibold text-[#0078ca]">Electrodomésticos</h2>
+        <p class="text-gray-600 mt-2 text-sm">Soluciones para tu hogar, eficientes y modernas.</p>
+      </div>
+    </a>
+
+    <!-- Accesorios -->
+    <a href="productos.html#accesorios" class="bg-white rounded-3xl shadow-md hover:shadow-xl hover:scale-105 transition-transform duration-300 p-4 flex flex-col">
+      <img src="img/categorias-accesorios.jpg" alt="Accesorios" class="w-full h-68 object-cover rounded-xl mb-4">
+      <div class="flex-grow flex flex-col justify-center text-center">
+        <h2 class="text-xl font-semibold text-[#0078ca]">Accesorios</h2>
+        <p class="text-gray-600 mt-2 text-sm">Complementos perfectos para mejorar tu experiencia.</p>
+      </div>
+    </a>
+
+  </div>
+</main>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+  <script>
+    fetch("footer.html")
+      .then(res => res.text())
+      .then(html => {
+        document.getElementById("footer").innerHTML = html;
+      });
+  </script>
+
+  
+</body>
+</html>

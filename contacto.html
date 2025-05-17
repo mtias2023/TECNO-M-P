@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - TECNO M&P</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <div id="navbar"></div>
+  <script>
+    fetch("navbar.html")
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("navbar").innerHTML = data;
+      });
+  </script>
+
+  <!-- Main Section -->
+  <main class="container mx-auto p-6 max-w-4xl">
+    <h1 class="text-3xl font-bold text-center mb-14">Contacto</h1>
+    
+    <div class="bg-white p-6 rounded-lg shadow-lg space-y-8">
+      <!-- Formulario de contacto -->
+      <div>
+        <h2 class="text-2xl font-semibold text-[#0078ca] mb-6">Envíanos un mensaje</h2>
+        <form class="space-y-4">
+          <div class="flex flex-col">
+            <label for="name" class="text-sm text-gray-600 mb-2">Nombre</label>
+            <input type="text" id="name" placeholder="Tu nombre completo" class="w-full p-3 border rounded-lg shadow-sm focus:ring-2 focus:ring-[#0078ca] focus:outline-none">
+          </div>
+
+          <div class="flex flex-col">
+            <label for="email" class="text-sm text-gray-600 mb-2">Correo electrónico</label>
+            <input type="email" id="email" placeholder="Tu correo electrónico" class="w-full p-3 border rounded-lg shadow-sm focus:ring-2 focus:ring-[#0078ca] focus:outline-none">
+          </div>
+
+          <div class="flex flex-col">
+            <label for="message" class="text-sm text-gray-600 mb-2">Mensaje</label>
+            <textarea id="message" placeholder="Escribe tu mensaje" class="w-full p-3 border rounded-lg shadow-sm focus:ring-2 focus:ring-[#0078ca] focus:outline-none h-32"></textarea>
+          </div>
+
+          <button type="submit" class="w-full bg-[#0078ca] text-white px-4 py-3 rounded-lg hover:bg-blue-700 transition duration-200">
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+
+      <!-- Información adicional -->
+      <div class="text-center">
+        <p class="text-gray-600 text-lg">¿Tienes alguna pregunta o sugerencia? No dudes en escribirnos, estaremos encantados de ayudarte.</p>
+        
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Footer -->
+  <div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+
+ /* Slider simple */
+ .slider {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+  .slide {
+    scroll-snap-align: center;
+    flex: none;
+    width: 100%;
+    max-width: 100%;
+  }
+  .slider::-webkit-scrollbar {
+    display: none;
+  }

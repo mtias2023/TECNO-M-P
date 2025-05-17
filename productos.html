@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Productos - TECNO M&P</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body class="bg-gray-50">
+
+<!-- Navbar -->
+<div id="navbar"></div>
+<script>
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+
+<main class="container mx-auto p-6">
+  <h1 class="text-3xl font-bold text-center mb-14">Nuestros Productos</h1>
+
+  <div id="categorias" class="space-y-20">
+
+    <!-- Celulares con subcategorías -->
+    <section id="celulares" class="space-y-8">
+      <h2 class="text-2xl font-bold text-[#0078ca]">Celulares</h2>
+
+      <div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Samsung</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="productos-celulares-samsung"></div>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Xiaomi</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="productos-celulares-xiaomi"></div>
+      </div>
+
+      <div>
+        <h3 class="text-2xl font-semibold text-gray-800 mb-4">Motorola</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="productos-celulares-motorola"></div>
+      </div>
+    </section>
+
+    <!-- Tecnología -->
+    <section id="tecnologia" class="space-y-4">
+      <h2 class="text-2xl font-bold text-[#0078ca]">Tecnología</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="productos-tecnologia"></div>
+    </section>
+
+    <!-- Electrodomésticos -->
+    <section id="electrodomesticos" class="space-y-4">
+      <h2 class="text-2xl font-bold text-[#0078ca]">Electrodomésticos</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="productos-electrodomesticos"></div>
+    </section>
+
+    <!-- Accesorios -->
+    <section id="accesorios" class="space-y-4">
+      <h2 class="text-2xl font-bold text-[#0078ca]">Accesorios</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" id="productos-accesorios"></div>
+    </section>
+
+  </div>
+</main>
+
+<!-- Scroll suave al ancla si se accede desde otra página -->
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      const hash = window.location.hash;
+      if (hash) {
+        const destino = document.querySelector(hash);
+        if (destino) {
+          destino.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    }, 400); // Espera para que los productos se carguen
+  });
+</script>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="js/productos.js"></script>
+<script src="js/main.js"></script>
+
+<!-- Footer -->
+<div id="footer"></div>
+<script>
+  fetch("footer.html")
+    .then(res => res.text())
+    .then(html => {
+      document.getElementById("footer").innerHTML = html;
+    });
+</script>
+
+</body>
+</html>

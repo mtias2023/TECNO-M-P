@@ -1,0 +1,138 @@
+[
+  {
+    "categoria": "Celulares",
+    "nombre": "Samsung Galaxy A55",
+    "marca": "Samsung",
+    "descripcion": "Pantalla Super AMOLED 6.6'' FHD+ 120Hz, 8GB RAM, cámara triple 50MP, Android 14, batería 5000mAh.",
+    "precio": "$650.000",
+    "imagen": "img/samsung-a55.jpg"
+  },
+  {
+    "categoria": "Celulares",
+    "nombre": "Samsung Galaxy A15",
+    "marca": "Samsung",
+    "descripcion": "Pantalla AMOLED 6.5'' FHD+ 90Hz, Helio G99, 128GB, cámara 50MP, batería 5000mAh.",
+    "precio": "$220.000",
+    "imagen": "img/samsung-a15.jpg"
+  },
+  {
+    "categoria": "Celulares",
+    "nombre": "Samsung Galaxy A06",
+    "marca": "Samsung",
+    "descripcion": "Celular con pantalla 6.5'' HD+, Helio G35, 64GB, cámara 13MP, batería 5000mAh.",
+    "precio": "$199.999",
+    "imagen": "img/samsung-a06.jpg"
+  },
+  {
+    "categoria": "Celulares",
+    "nombre": "Xiaomi Redmi 14c",
+    "marca": "Xiaomi",
+    "descripcion": "Pantalla 6.88'' HD+ 120Hz, Helio G81, 256GB, cámara 50MP, batería 5160mAh.",
+    "precio": "$210.000",
+    "imagen": "img/xiaomi-14c.jpg"
+  },
+  {
+    "categoria": "Celulares",
+    "nombre": "Xiaomi Poco X6 Pro 5G",
+    "marca": "Xiaomi",
+    "descripcion": "Pantalla AMOLED 6.67'' 1.5K 120Hz, Dimensity 8300, 12GB RAM, 512GB, cámara 64MP, carga rápida 67W.",
+    "precio": "$510.000",
+    "imagen": "img/poco-x6-pro.jpg"
+  },
+  {
+    "categoria": "Celulares",
+    "nombre": "Xiaomi Redmi A3x",
+    "marca": "Xiaomi",
+    "descripcion": "Pantalla 6.71'' HD+, 3GB RAM, 64GB, cámara dual 8MP, batería 5000mAh.",
+    "precio": "$170.000",
+    "imagen": "img/redmi-a3x.jpg"
+  },
+  {
+    "categoria": "Celulares",
+    "nombre": "Motorola G54 Power 5G",
+    "marca": "Motorola",
+    "descripcion": "Pantalla 6.5'' FHD+ 120Hz, Dimensity 7020, 256GB, cámara 50MP, batería 6000mAh.",
+    "precio": "$380.000",
+    "imagen": "img/motorola-g54.jpg"
+  },
+  {
+    "categoria": "Celulares",
+    "nombre": "Motorola G24",
+    "marca": "Motorola",
+    "descripcion": "Pantalla 6.6'' HD+ 90Hz, Helio G85, 128GB, cámara 50MP, batería 5000mAh.",
+    "precio": "$225.000",
+    "imagen": "img/motog24.jpg"
+  },
+  {
+    "categoria": "Celulares",
+    "nombre": "Motorola E14",
+    "marca": "Motorola",
+    "descripcion": "Pantalla 6.6'' HD+, 64GB, cámara 13MP, Android 14 Go Edition, batería 5000mAh.",
+    "precio": "$145.000",
+    "imagen": "img/motorola-e14.jpg"
+  },
+  {
+    "categoria": "Tecnología",
+    "nombre": "Playstation 5 Slim Digital Edition 1tb",
+    "descripcion": "Incluye: un joystick, cables USB y HDMI, así como la consola en su edición digital.",
+    "precio": "$1.000.000 ARG",
+    "imagen": "img/play5.jpg"
+  },
+  {
+    "categoria": "Tecnología",
+    "nombre": "Smart Tv 32 Android CMB",
+    "descripcion": "Televisor CMA SM-32 de 32'' LED HD con resolución 1366×768. Incluye HDMI, USB, VGA, Wi-Fi y navegador web. Modelo Smart TV.",
+    "precio": "$290.000 ARG",
+    "imagen": "img/smart-cmb.jpg"
+  },
+  {
+    "categoria": "Tecnología",
+    "nombre": "Proyector HY-300 A (PRO) ULTRA HD",
+    "descripcion": "Incluye una app preinstalada para que disfrutes de tv en vivo, peliculas en estreno, series, pack de futbol y mas.",
+    "precio": "$80.000 ARG",
+    "imagen": "img/proyector-digital.jpg"
+  },
+    {
+      "categoria": "Electrodomésticos",
+      "nombre": "Horno Eléctrico 95 Litros Yelmo",
+      "descripcion": "Este horno de gran capacidad te permite cocinar una amplia variedad de platos para toda la familia. Con sus 2200 W de potencia, podrás preparar tus comidas de manera rápida y eficiente.",
+      "precio": "$285.000 ARG",
+      "imagen": "img/horno-yelmo.jpg"
+    },
+    {
+      "categoria": "Electrodomésticos",
+      "nombre": "Arrocera Antiadherente Eléctrica Dinax",
+      "descripcion": "Con 700W de potencia, reduce el tiempo de cocción, ideal para servirlo en su punto justo sin prisas. Además, su capacidad es perfecta para familias o reuniones, asegurando porciones abundantes.",
+      "precio": "$40.000 ARG",
+      "imagen": "img/arrocera-electrica.jpg"
+    },
+    {
+      "categoria": "Electrodomésticos",
+      "nombre": "Sandwichera Eléctrica Suono",
+      "descripcion": "La sandwichera antiadherente Suono es ideal para preparar sándwiches de manera sencilla, evitando que los ingredientes se peguen gracias a su superficie antiadherente que asegura un tostado uniforme.",
+      "precio": "$25.000 ARG",
+      "imagen": "img/sandwichera-suono.jpg"
+    },
+    {
+      "categoria": "Accesorios",
+      "nombre": "Kit Editor De Videos",
+      "descripcion": "Características: Trípode de plástico, soporte universal para celular, el soporte se puede utilizar de manera vertical u horizontal, micrófono con conexión Jack 3.5mm, control remoto Bluetooth, flash LED.",
+      "precio": "$15.000 ARG",
+      "imagen": "img/kit-video.png"
+    },
+    {
+      "categoria": "Accesorios",
+      "nombre": "Joystick Inalámbrico PS4 Doubleshock",
+      "descripcion": "Activá el Bluetooth, Cuenta con conexión Bluetooth de alta tecnología para usarlo en cualquier ordenador o dispositivo, te permite jugar sin necesidad de que haya cables de por medio.",
+      "precio": "$25.000 ARG",
+      "imagen": "img/joystick4.jpg"
+    },
+    {
+      "categoria": "Accesorios",
+      "nombre": "Auriculares Pro 2da Generación Para iPhone",
+      "descripcion": "Auriculares Bluetooth in-ear compatibles con AirPods Pro 2da generación, con sonido envolvente, micrófono, luz LED y compatibilidad con iOS/Android.",
+      "precio": "$35.000 ARG",
+      "imagen": "img/audifonos-AirPods-Max.jpg"
+    }
+  ]
+  
