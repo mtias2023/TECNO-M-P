@@ -10,20 +10,31 @@ const swiper = new Swiper('.swiper', {
     },
   });
 
-  document.addEventListener('DOMContentLoaded', () => {
-    const menuBtn = document.getElementById('menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    const icono = document.getElementById('icono-menu');
+  function cargarNavbar() {
+  fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
 
-    menuBtn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-      // Alterna entre ícono de barras y X (fa-xmark es el correcto)
-      if (menu.classList.contains('hidden')) {
-        icono.classList.remove('fa-xmark');
-        icono.classList.add('fa-bars');
-      } else {
-        icono.classList.remove('fa-bars');
-        icono.classList.add('fa-xmark');
+      // Inicializamos el menú mobile
+      const menuBtn = document.getElementById('menu-btn');
+      const menu = document.getElementById('mobile-menu');
+      const icono = document.getElementById('icono-menu');
+
+      if (menuBtn && menu && icono) {
+        menuBtn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+          if (menu.classList.contains('hidden')) {
+            icono.classList.remove('fa-xmark');
+            icono.classList.add('fa-bars');
+          } else {
+            icono.classList.remove('fa-bars');
+            icono.classList.add('fa-xmark');
+          }
+        });
       }
     });
-  });
+}
+
+// Llamamos al cargar la página
+cargarNavbar();
