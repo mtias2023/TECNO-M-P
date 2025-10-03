@@ -12,15 +12,34 @@
 
 <body class="bg-white text-black font-sans">
 
-  <!-- Navbar -->
   <div id="navbar"></div>
-  <script>
-    fetch("navbar.html")
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById("navbar").innerHTML = data;
+
+<script>
+fetch("navbar.html")
+  .then(response => response.text())
+  .then(data => {
+    document.getElementById("navbar").innerHTML = data;
+
+    // Inicializamos la funcionalidad del menú mobile aquí
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    const icono = document.getElementById('icono-menu');
+
+    if (menuBtn && menu && icono) {
+      menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('hidden');
+        if (menu.classList.contains('hidden')) {
+          icono.classList.remove('fa-xmark');
+          icono.classList.add('fa-bars');
+        } else {
+          icono.classList.remove('fa-bars');
+          icono.classList.add('fa-xmark');
+        }
       });
-  </script>
+    }
+  });
+</script>
+
   
   <!-- Banners -->
   <section class="swiper slider">
@@ -174,9 +193,6 @@
   </div>
 </section>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="js/main.js"></script>
-
   <!-- Footer -->
   <div id="footer"></div>
 <script>
@@ -186,6 +202,7 @@
       document.getElementById("footer").innerHTML = html;
     });
 </script>
-
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
